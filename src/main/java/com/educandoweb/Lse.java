@@ -145,6 +145,22 @@ public class Lse {
         }
     }
 
+    public void removerImpares(){
+        while (inicio != null && inicio.valor % 2 != 0){
+            inicio = inicio.proximo;
+        }
+
+        No atual = inicio;
+
+        while (atual != null && atual.proximo != null){
+            if (atual.proximo.valor % 2 != 0){
+                atual.proximo = atual.proximo.proximo;
+            } else {
+                atual = atual.proximo;
+            }
+        }
+    }
+
     @Override
     public String toString() {
         return "Lse{" +

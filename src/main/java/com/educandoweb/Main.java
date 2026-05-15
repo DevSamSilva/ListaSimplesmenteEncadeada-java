@@ -46,6 +46,13 @@ public class Main {
         System.out.println(lse4);
         lse4.imprimeInvertido(lse4.inicio);
 
+        System.out.println("==============");
+
+        lse4.imprimirPares();
+
+        lse4.removerImpares();
+        System.out.println(lse4);
+
 
     }
 
