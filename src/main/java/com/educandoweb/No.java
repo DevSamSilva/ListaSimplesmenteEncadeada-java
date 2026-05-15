@@ -8,4 +8,12 @@ public class No {
         this.valor = valor;
         this.proximo = null;
     }
+
+    @Override
+    public String toString() {
+        return "No{" +
+                "valor=" + valor +
+                ", proximo=" + proximo +
+                '}';
+    }
 }
