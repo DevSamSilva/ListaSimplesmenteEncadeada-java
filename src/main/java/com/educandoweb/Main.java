@@ -5,6 +5,9 @@ public class Main {
         Lse lse1 = new Lse();
         lse1.adicionarNoInicio(2);
         lse1.adicionarNoInicio(1);
+        lse1.inserirNoFinal(3);
         System.out.println(lse1);
     }
+
+
 }
