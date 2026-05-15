@@ -1,5 +1,7 @@
 package com.educandoweb;
 
+import java.util.List;
+
 public class Lse {
     No inicio;
 
@@ -14,9 +16,10 @@ public class Lse {
 
         if(inicio == null){
             inicio = novoNo;
+            return;
         }
 
-        No atual = inicio.proximo;
+        No atual = inicio;
 
         while (atual.proximo != null){
             atual = atual.proximo;
@@ -91,6 +94,19 @@ public class Lse {
             }
             atual = atual.proximo;
         }
+    }
+
+    public Lse clonar(){
+        Lse clone = new Lse();
+
+        No atual = inicio;
+
+        while (atual != null){
+            clone.inserirNoFinal(atual.valor);
+            atual = atual.proximo;
+        }
+
+        return clone;
     }
 
     @Override

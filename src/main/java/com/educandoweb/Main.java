@@ -31,6 +31,17 @@ public class Main {
         lse2.removerRepetidos();
         System.out.println(lse2);
 
+        Lse lse3 = new Lse();
+        lse3.adicionarNoInicio(2);
+        lse3.adicionarNoInicio(1);
+        lse3.inserirNoFinal(3);
+        lse3.inserirNoFinal(3);
+        lse3.inserirNoFinal(3);
+
+        Lse lse4 = lse3.clonar();
+
+        System.out.println(lse4);
+
 
     }
 
