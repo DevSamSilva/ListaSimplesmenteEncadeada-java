@@ -41,6 +41,9 @@ public class Main {
         Lse lse4 = lse3.clonar();
 
         System.out.println(lse4);
+        lse4.inverter();
+
+        System.out.println(lse4);
 
 
     }

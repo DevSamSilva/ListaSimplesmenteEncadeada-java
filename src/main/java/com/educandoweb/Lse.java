@@ -109,6 +109,20 @@ public class Lse {
         return clone;
     }
 
+    public void inverter(){
+        No anterior = null;
+        No atual = inicio;
+
+        while (atual != null){
+            No proximo = atual.proximo;
+            atual.proximo = anterior;
+            anterior = atual;
+            atual = proximo;
+        }
+
+        inicio = anterior;
+    }
+
     @Override
     public String toString() {
         return "Lse{" +
