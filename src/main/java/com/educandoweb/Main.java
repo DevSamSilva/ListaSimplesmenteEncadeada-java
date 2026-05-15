@@ -8,6 +8,7 @@ public class Main {
         lse1.inserirNoFinal(3);
         System.out.println(lse1);
         lse1.percorrer();
+        System.out.println(lse1.somarElementos());
     }
 
 

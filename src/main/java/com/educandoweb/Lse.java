@@ -34,6 +34,18 @@ public class Lse {
         }
     }
 
+    public int somarElementos(){
+        int soma = 0;
+        No atual = inicio;
+
+        while (atual != null){
+            soma += atual.valor;
+            atual = atual.proximo;
+        }
+
+        return soma;
+    }
+
     @Override
     public String toString() {
         return "Lse{" +
