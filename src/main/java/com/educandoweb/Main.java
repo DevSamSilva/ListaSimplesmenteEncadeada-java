@@ -7,6 +7,7 @@ public class Main {
         lse1.adicionarNoInicio(1);
         lse1.inserirNoFinal(3);
         System.out.println(lse1);
+        lse1.percorrer();
     }
 
 

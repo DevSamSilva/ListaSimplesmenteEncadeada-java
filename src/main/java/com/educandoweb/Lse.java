@@ -25,6 +25,15 @@ public class Lse {
         atual.proximo = novoNo;
     }
 
+    public void percorrer(){
+        No atual = inicio;
+
+        while (atual != null){
+            System.out.println("[" + atual.valor + "]");
+            atual = atual.proximo;
+        }
+    }
+
     @Override
     public String toString() {
         return "Lse{" +
