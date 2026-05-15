@@ -46,6 +46,39 @@ public class Lse {
         return soma;
     }
 
+    public void removerOcorrencia(int valor){
+        while (inicio != null && inicio.valor == valor){
+            inicio = inicio.proximo;
+        }
+        No atual = inicio;
+
+        while (atual != null && atual.proximo != null){
+            if (atual.proximo.valor == valor){
+                atual.proximo = atual.proximo.proximo;
+            }
+            atual = atual.proximo;
+        }
+    }
+
+    public boolean elementosRepetidos(){
+        No atual = inicio;
+
+        while (atual != null){
+            No comparador = atual;
+
+            while (comparador.proximo != null) {
+                if (comparador.proximo.valor == atual.valor) {
+                    comparador.proximo = comparador.proximo.proximo;
+                    return true;
+                }
+                comparador = comparador.proximo;
+            }
+
+            atual = atual.proximo;
+        }
+        return  false;
+    }
+
     @Override
     public String toString() {
         return "Lse{" +
