@@ -44,6 +44,7 @@ public class Main {
         lse4.inverter();
 
         System.out.println(lse4);
+        lse4.imprimeInvertido(lse4.inicio);
 
 
     }

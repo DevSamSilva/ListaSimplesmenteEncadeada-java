@@ -123,6 +123,28 @@ public class Lse {
         inicio = anterior;
     }
 
+    public void imprimeInvertido(No atual){
+        if (atual == null){
+            return;
+        }
+
+        imprimeInvertido(atual.proximo);
+        System.out.println(atual.valor);
+    }
+
+    public void imprimirPares(){
+        int posicao = 0;
+        No atual = inicio;
+
+        while (atual != null){
+            if (posicao % 2 == 0){
+                System.out.println(atual.valor);
+            }
+            atual = atual.proximo;
+            posicao++;
+        }
+    }
+
     @Override
     public String toString() {
         return "Lse{" +
