@@ -161,6 +161,21 @@ public class Lse {
         }
     }
 
+    public int somarPares(){
+        No atual = inicio;
+        int soma = 0;
+
+        while (atual != null){
+            if (atual.valor % 2 == 0){
+                soma += atual.valor;
+            }
+
+            atual = atual.proximo;
+        }
+
+        return soma;
+    }
+
     @Override
     public String toString() {
         return "Lse{" +

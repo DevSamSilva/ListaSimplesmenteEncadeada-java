@@ -37,6 +37,7 @@ public class Main {
         lse3.inserirNoFinal(3);
         lse3.inserirNoFinal(3);
         lse3.inserirNoFinal(3);
+        lse3.inserirNoFinal(4);
 
         Lse lse4 = lse3.clonar();
 
@@ -49,6 +50,8 @@ public class Main {
         System.out.println("==============");
 
         lse4.imprimirPares();
+
+        System.out.println(lse4.somarPares());
 
         lse4.removerImpares();
         System.out.println(lse4);
