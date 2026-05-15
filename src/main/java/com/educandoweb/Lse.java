@@ -68,7 +68,6 @@ public class Lse {
 
             while (comparador.proximo != null) {
                 if (comparador.proximo.valor == atual.valor) {
-                    comparador.proximo = comparador.proximo.proximo;
                     return true;
                 }
                 comparador = comparador.proximo;
@@ -77,6 +76,21 @@ public class Lse {
             atual = atual.proximo;
         }
         return  false;
+    }
+
+    public void removerRepetidos(){
+        No atual = inicio;
+        while (atual != null){
+            No comparador = atual;
+            while (comparador.proximo != null){
+                if (comparador.proximo.valor == atual.valor){
+                    comparador.proximo = comparador.proximo.proximo;
+                } else {
+                    comparador = comparador.proximo;
+                }
+            }
+            atual = atual.proximo;
+        }
     }
 
     @Override

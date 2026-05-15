@@ -15,6 +15,21 @@ public class Main {
 
         System.out.println(lse1);
         System.out.println(lse1.elementosRepetidos());
+        lse1.removerRepetidos();
+        System.out.println(lse1);
+
+
+        Lse lse2 = new Lse();
+        lse2.adicionarNoInicio(2);
+        lse2.adicionarNoInicio(1);
+        lse2.inserirNoFinal(3);
+        lse2.inserirNoFinal(3);
+        lse2.inserirNoFinal(3);
+
+
+        System.out.println(lse2);
+        lse2.removerRepetidos();
+        System.out.println(lse2);
 
 
     }
